@@ -21,6 +21,12 @@ h2 {
 	font-family: Montserrat;
 	font-weight: 400;
     text-align: left;
+}
+h3 {
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 400;
+    text-align: left;
 }  
 #header {
 	margin-bottom: 60px;
@@ -49,7 +55,7 @@ h2 {
 	z-index: 90;
 	position: fixed;
 	box-shadow: 0px 0px 50px rgba(0,0,0, 0.3);
-	height: 50px;
+	height: 40px;
 }
 .navbar-toggler {
     padding: 0;
