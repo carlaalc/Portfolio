@@ -9,8 +9,8 @@ $(window).on("scroll", function(){
 })
 
 var opcoesSR = {
-	delay: 300,
-	duration: 1000,
+	delay: 150,
+	duration: 500,
 	origin: 'bottom',
 	distance: '50px',
 	viewOffset: {

@@ -153,7 +153,7 @@ nav a:hover {
 }
 #feature1, #feature2, #feature3, #feature4, #feature5, #feature6, #feature7, #feature8 {
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: -100px;
     padding-top: 100px;
     padding-bottom: 50px;
 }
@@ -162,7 +162,8 @@ nav a:hover {
 }
 #sobremim {
     width: 100%;
-    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 20px;
     background: #ebebeb;
     position: relative;
     padding: 100px 0 120px;
@@ -173,7 +174,7 @@ nav a:hover {
     height: 150px;
     background: #ebebeb;
     position: absolute;
-    top: -40px;
+    top: -10px;
     transform: rotateZ(-1deg);
     z-index: -1;
 }
