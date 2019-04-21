@@ -4,6 +4,8 @@
 }
 body {
 	font-family: PT sans, arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #fff;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: Montserrat;
@@ -16,18 +18,12 @@ h1 {
     margin-top: 15px;
     text-align: left;
 }
-h2 {
+h2, h3 {
 	font-size: 18px;
 	font-family: Montserrat;
 	font-weight: 400;
     text-align: left;
 }
-h3 {
-    font-size: 18px;
-    font-family: Montserrat;
-    font-weight: 400;
-    text-align: left;
-}  
 #header {
 	margin-bottom: 60px;
 	position: fixed;
@@ -92,10 +88,47 @@ h3 {
     top: 10px;
     border-radius: 5px;
 }
+.image-container {
+  background-size: cover; 
+  position: relative; /* Needed to position the cutout text in the middle of the image */
+  height: 300px; /* Some height */
+}
+
+.text {
+    text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 3vw; /* Responsive font size */
+  line-height: 80px;
+  font-weight: bold;
+  margin: 25px auto; /* Center the text container */
+  padding: 130px;
+  width: 100%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+@media (max-width: 992px) {
+    .text {
+        font-size: 4vw;
+        line-height: 50px;
+    }
+}
+@media (max-width: 576px) {
+    .text {
+        font-size: 5vw;
+        line-height: 50px;
+    }
+}
+
 #clientes {
     background: #ebebeb;
     position: relative;
-    padding: 30px 0 20px;
+    padding: 20px 0 20px 0;
+
     /*margin-bottom: 100px;*/
 }
 #clientes:after {
@@ -109,7 +142,7 @@ h3 {
     z-index: -1;
 }
 #clientes-box {
-    padding: 40px 0;
+    padding: -40px 0;
     /*border: solid 1px #c2c5cc;*/
     /*border-radius: 12px;*/
     position: relative;
@@ -132,7 +165,7 @@ h3 {
 #clientes-box img {
     opacity: 0.7;
     width: 400px;
-    margin: 10px 0;
+    margin: 0;
     transition: opacity 200ms ease;
 }
 #clientes-box img:hover {
